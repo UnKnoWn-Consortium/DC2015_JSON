@@ -1,6 +1,8 @@
 # Hong Kong District Council Election 2015 JSON Collection
 This repository is a collection of JSONs for Hong Kong District Council Election 2015.
+
 There are **two** versions avaiable: `districts.full.json` and `districts.json`
+
 `districts.full.json` is the full version; and
 `districts.json` contains all fields in the full version except GeoJSON
 
