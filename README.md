@@ -47,10 +47,10 @@ District Council Election 2015 Constituent Boundary GeoJSON: <br>https://github.
                     "gender": (String),
                     "cAlias": (String),
                     "eAlias": (String),
-                    "cOccupation": (String),
-                    "eOccupation": (String),
-                    "cAffiliation": (String) Delcared political affliation in Chinese,
-                    "eAffiliation": (String) Delcared political affliation in English,
+                    "cOccupation": [(String)],
+                    "eOccupation": [(String)],
+                    "cAffiliation": [(String) Delcared political affliation in Chinese],
+                    "eAffiliation": [(String) Delcared political affliation in English],
                     "vote": (Number),
                     "win": (Boolean)
                 }
@@ -87,10 +87,10 @@ District Council Election 2015 Constituent Boundary GeoJSON: <br>https://github.
                     "gender": (String),
                     "cAlias": (String),
                     "eAlias": (String),
-                    "cOccupation": (String),
-                    "eOccupation": (String),
-                    "cAffiliation": (String) Delcared political affliation in Chinese,
-                    "eAffiliation": (String) Delcared political affliation in English,
+                    "cOccupation": [(String)],
+                    "eOccupation": [(String)],
+                    "cAffiliation": [(String) Delcared political affliation in Chinese],
+                    "eAffiliation": [(String) Delcared political affliation in English],
                     "vote": (Number),
                     "win": (Boolean)
                 }
