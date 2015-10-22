@@ -9,6 +9,7 @@ There are **two** versions avaiable: `districts.full.json` and `districts.json`
 A pure GeoJSON version will be added later. 
 
 # Schema
+```
 [{
     "region": String,
     "ename": String,
@@ -44,3 +45,4 @@ A pure GeoJSON version will be added later.
         }
     ]
 }]
+```
