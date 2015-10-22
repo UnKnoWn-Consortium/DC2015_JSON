@@ -8,19 +8,24 @@ There are **two** versions avaiable: `districts.full.json` and `districts.json`
 
 A pure GeoJSON version will be added later. 
 
+# Source and Reference
+
+District Info, Constituent Info, and Candidate Info: <br>http://www.elections.gov.hk/dc2015/chi/index.html <br>http://www.elections.gov.hk/dc2015/eng/index.html
+District Council Election 2015 Constituent Boundary GeoJSON: <br>https://github.com/alanho/dc2015
+
 # Schema
 
 `districts.full.json`
 ```
 [{
-    "region": String,
-    "ename": String,
-    "cname": String,
-    "population": Number,
-    "electors": Number,
-    "iconSrc": String,
-    "exOfficio": Number,
-    "GeoJSON": GeoJSON,
+    "region": (String) Hong-Kong-Island/Kowloon/New-Territories, 
+    "ename": (String) English name of the district, 
+    "cname": (String) Chinese name of the district, 
+    "population": (Number) Projected Population as at 30 June 2015,
+    "electors": (Number) Number of Electors in the 2015 Final Register,
+    "iconSrc": (String) Icon link of the respective District Council,
+    "exOfficio": (Number) Ex Officio seats,
+    "GeoJSON": (GeoJSON Object),
     "seats": [
         {
             "type": String,
