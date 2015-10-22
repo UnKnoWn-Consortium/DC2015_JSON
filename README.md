@@ -16,6 +16,12 @@ District Info, Constituent Info, and Candidate Info: <br>http://www.elections.go
 
 District Council Election 2015 Constituent Boundary GeoJSON: <br>https://github.com/alanho/dc2015
 
+Hong Kong District Council Boundary: <br>
+GADM database of Global Administrative Areas ver. 2.7: <br>
+http://www.gadm.org/
+
+P.S. The shapefile for these district council boundaries is based on District Council Election 2011, and thus outdated.
+
 # Schema
 
 `districts.full.json`
