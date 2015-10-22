@@ -8,9 +8,12 @@ There are **two** versions avaiable: `districts.full.json` and `districts.json`
 
 A pure GeoJSON version will be added later. 
 
+Logos for the 18 district councils can be found in `dc_logo`. All are formatted to 350px sqaure png with transparent background. 
+
 # Source and Reference
 
 District Info, Constituent Info, and Candidate Info: <br>http://www.elections.gov.hk/dc2015/chi/index.html <br>http://www.elections.gov.hk/dc2015/eng/index.html
+
 District Council Election 2015 Constituent Boundary GeoJSON: <br>https://github.com/alanho/dc2015
 
 # Schema
