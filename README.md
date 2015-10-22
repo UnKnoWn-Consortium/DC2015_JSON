@@ -9,6 +9,8 @@ There are **two** versions avaiable: `districts.full.json` and `districts.json`
 A pure GeoJSON version will be added later. 
 
 # Schema
+
+`districts.full.json`
 ```
 [{
     "region": String,
@@ -28,6 +30,43 @@ A pure GeoJSON version will be added later.
             "population": Number,
             "electors": Number,
             "GeoJSON": GeoJSON,
+            "finalized": Boolean,
+            "candidates": [
+                {
+                    "number": Number,
+                    "cname": String,
+                    "ename": String,
+                    "gender": String,
+                    "alias": String,
+                    "occupation": String,
+                    "affiliation": String,
+                    "vote": Number,
+                    "win": Boolean
+                }
+            ]
+        }
+    ]
+}]
+```
+
+`districts.json`
+```
+[{
+    "region": String,
+    "ename": String,
+    "cname": String,
+    "population": Number,
+    "electors": Number,
+    "iconSrc": String,
+    "exOfficio": Number,
+    "seats": [
+        {
+            "type": String,
+            "cacode": String,
+            "cname": String,
+            "ename": String,
+            "population": Number,
+            "electors": Number,
             "finalized": Boolean,
             "candidates": [
                 {
