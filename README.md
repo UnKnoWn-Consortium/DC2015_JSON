@@ -3,7 +3,7 @@ This repository is a collection of JSONs for Hong Kong District Council Election
 
 There are **two** versions avaiable: `districts.full.json` and `districts.json`
 
-`districts.full.json` is the full version; and
+`districts.full.json` is the full version; and <br>
 `districts.json` contains all fields in the full version except GeoJSON
 
 A pure GeoJSON version will be added later. 
