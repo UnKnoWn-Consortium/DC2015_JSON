@@ -6,7 +6,7 @@ There are **two** versions avaiable: `districts.full.json` and `districts.json`
 `districts.full.json` is the full version; and <br>
 `districts.json` contains all fields in the full version except GeoJSON
 
-A pure GeoJSON version will be added later. 
+GeoJSON version is available now! P.S. Schema to be added later
 
 Logos for the 18 district councils can be found in `dc_logo`. All are formatted to 350px sqaure png with transparent background. 
 
@@ -19,8 +19,7 @@ District Council Election 2015 Constituent Boundary GeoJSON: <br>https://github.
 Hong Kong District Council Boundary: <br>
 GADM database of Global Administrative Areas ver. 2.7: <br>
 http://www.gadm.org/
-
-P.S. The shapefile for these district council boundaries is based on District Council Election 2011, and thus outdated.
+<br>P.S. The shapefile for these district council boundaries is based on District Council Election 2011, and thus outdated.
 
 # Schema
 
