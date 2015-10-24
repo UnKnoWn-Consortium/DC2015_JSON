@@ -3,12 +3,13 @@
 
 This repository is a collection of JSONs (plus relevant materials) for Hong Kong District Council Election 2015.
 
-There are **two** versions avaiable: `districts.full.json` and `districts.json`
+There are **THREE** versions avaiable: `districts.full.json`, `districts.json`, and `geojson.json`
 
-`districts.full.json` is the full version; and <br>
-`districts.json` contains all fields in the full version except GeoJSON
+1. `districts.full.json` is the full version; <br>
+2. `districts.json` contains all fields in the full version except `GeoJSON` fields in districts and constituents; and <br>
+3. `geojson.json` is a digestible GeoJSON of type `FeatureCollection` with GeoJSON objects of districts and constituents as `features` and respective district and constituent properties other than `GeoJSON` are encompassed as `properties` of the respective `features`. 
 
-GeoJSON version is available now! P.S. Schema to be added later
+**Updated 24OCT2015: GeoJSON version is available now! Please check the latest release.**
 
 Logos for the 18 district councils can be found in `dc_logo`. All are formatted to 350px sqaure png with transparent background. 
 
@@ -51,15 +52,15 @@ http://www.gadm.org/
                     "number": (Number) Candidate number,
                     "cname": (String) Chinese name of the candidate,
                     "ename": (String) English name of the candidate,
-                    "gender": (String),
-                    "cAlias": (String),
-                    "eAlias": (String),
-                    "cOccupation": [(String)],
-                    "eOccupation": [(String)],
+                    "sex": (String) Sex of the candidate,
+                    "cAlias": (String) Chinese alias of the candidate,
+                    "eAlias": (String) English alias of the candidate,
+                    "cOccupation": [(String) Declared occupation in Chinese],
+                    "eOccupation": [(String) Declared occupation in English],
                     "cAffiliation": [(String) Delcared political affliation in Chinese],
                     "eAffiliation": [(String) Delcared political affliation in English],
-                    "vote": (Number),
-                    "win": (Boolean)
+                    "vote": (Integer) Vote received,
+                    "win": (Boolean) whether win or not
                 }
             ]
         }
@@ -73,36 +74,95 @@ http://www.gadm.org/
     "region": (String) Hong-Kong-Island/Kowloon/New-Territories, 
     "ename": (String) English name of the district, 
     "cname": (String) Chinese name of the district, 
-    "population": (Number) Projected Population as at 30 June 2015,
-    "electors": (Number) Number of Electors in the 2015 Final Register,
+    "population": (Integer) Projected Population as at 30 June 2015,
+    "electors": (Integer) Number of Electors in the 2015 Final Register,
     "iconSrc": (String) Icon link of the respective District Council,
-    "exOfficio": (Number) Ex Officio seats,
+    "exOfficio": (Integer) Number of Ex Officio seats,
     "seats": [
         {
             "type": (String) constutuent/exofficio,
             "cacode": (String) Constituent code,
             "cname": (String) Chinese name of the constituent,
             "ename": (String) English name of the constituent,
-            "population": (Number) Projected Population as at 30 June 2015,
+            "population": (Integer) Projected Population as at 30 June 2015,
             "electors": (Number) Number of Electors in the 2015 Final Register,
-            "finalized": (Boolean) ,
+            "finalized": (Boolean) Whether the result has been finalized,
             "candidates": [
                 {
                     "number": (Number) Candidate number,
                     "cname": (String) Chinese name of the candidate,
                     "ename": (String) English name of the candidate,
-                    "gender": (String),
-                    "cAlias": (String),
-                    "eAlias": (String),
-                    "cOccupation": [(String)],
-                    "eOccupation": [(String)],
+                    "sex": (String) Sex of the candidate,
+                    "cAlias": (String) Chinese alias of the candidate,
+                    "eAlias": (String) English alias of the candidate,
+                    "cOccupation": [(String) Declared occupation in Chinese],
+                    "eOccupation": [(String) Declared occupation in English],
                     "cAffiliation": [(String) Delcared political affliation in Chinese],
                     "eAffiliation": [(String) Delcared political affliation in English],
-                    "vote": (Number),
-                    "win": (Boolean)
+                    "vote": (Integer) Vote received,
+                    "win": (Boolean) whether win or not
                 }
             ]
         }
     ]
+}]
+```
+
+`geojson.json`
+```
+[{ // District
+    "type": "FeatureCollection",
+    "crs": {"type": "name", "properties": {"name": "urn:ogc:def:crs:OGC:1.3:CRS84"}},
+    "features": [{
+        "type": "Feature", 
+        "properties": {
+            "region": (String) Hong-Kong-Island/Kowloon/New-Territories, 
+            "ename": (String) English name of the district, 
+            "cname": (String) Chinese name of the district, 
+            "population": (Integer) Projected Population as at 30 June 2015, 
+            "electors": (Integer) Number of Electors in the 2015 Final Register, 
+            "iconSrc": (String) Icon link of the respective District Council,
+            "seats": (Integer) Number of seats in the District Council, 
+            "exOfficio": (Integer) Number of ex officio members in the District Council
+        }, 
+        "geometry": {
+            "type": (String) GeometryCollection/Polygon,
+            "geometries": [Coordinate Pairs]
+        }
+}, 
+{ // Constituent
+    "type": "FeatureCollection",
+    "crs": {"type": "name", "properties": {"name": "urn:ogc:def:crs:OGC:1.3:CRS84"}},
+    "features": [{
+        "type": "Feature", 
+        "properties": {
+            type: (String) constituent
+            cacode:(String) Constituent code, 
+            "cname": (String) Chinese name of the constituent,
+            "ename": (String) English name of the constituent,
+            "population": (Integer) Projected Population as at 30 June 2015,
+            "electors": (Number) Number of Electors in the 2015 Final Register,
+            "finalized": (Boolean) Whether the result has been finalized,
+            candidates: [
+                {
+                    "number": (Number) Candidate number,
+                    "cname": (String) Chinese name of the candidate,
+                    "ename": (String) English name of the candidate,
+                    "sex": (String) Sex of the candidate,
+                    "cAlias": (String) Chinese alias of the candidate,
+                    "eAlias": (String) English alias of the candidate,
+                    "cOccupation": [(String) Declared occupation in Chinese],
+                    "eOccupation": [(String) Declared occupation in English],
+                    "cAffiliation": [(String) Delcared political affliation in Chinese],
+                    "eAffiliation": [(String) Delcared political affliation in English],
+                    "vote": (Integer) Vote received,
+                    "win": (Boolean) whether win or not
+                }
+            ]
+        }, 
+        "geometry": {
+            "type": (String) GeometryCollection/Polygon,
+            "geometries": [Coordinate Pairs]
+        }
 }]
 ```
