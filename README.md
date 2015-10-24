@@ -7,7 +7,7 @@ There are **THREE** versions avaiable: `districts.full.json`, `districts.json`, 
 
 1. `districts.full.json` is the full version; <br>
 2. `districts.json` contains all fields in the full version except `GeoJSON` fields in districts and constituents; and <br>
-3. `geojson.json` is a digestible GeoJSON of type `FeatureCollection` with GeoJSON objects of districts and constituents as `features` and respective district and constituent properties other than `GeoJSON` are encompassed as `properties` of the respective `features`. 
+3. `geojson.json` is a digestible GeoJSON of type `FeatureCollection` with GeoJSON objects of districts and constituents as `features` and respective district and constituent properties other than `GeoJSON` encompassed as `properties` in the respective GeoJSON object. 
 
 **Updated 24OCT2015: GeoJSON version is available now! Please check the latest release.**
 
