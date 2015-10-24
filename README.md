@@ -1,5 +1,5 @@
 # Hong Kong <br>District Council Election 2015 <br>JSON Collection
-[Download the Latest Release here](https://github.com/UnKnoWn-Consortium/DC2015_JSON/releases/latest)
+[**Download the Latest Release here**](https://github.com/UnKnoWn-Consortium/DC2015_JSON/releases/latest)
 
 This repository is a collection of JSONs (plus relevant materials) for Hong Kong District Council Election 2015.
 
