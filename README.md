@@ -1,6 +1,9 @@
 # Hong Kong <br>District Council Election 2015 <br>JSON Collection
 [**Download the Latest Release here**](https://github.com/UnKnoWn-Consortium/DC2015_JSON/releases/latest)
 
+**Updated 24OCT2015: GeoJSON version is available now! Please check the latest release.**
+**Updated 30OCT2015: Updated with Gazette Extraordinary published on Monday, 26/10/2015, No. 40 Vol. 19**
+
 This repository is a collection of JSONs (plus relevant materials) for Hong Kong District Council Election 2015.
 
 There are **THREE** versions avaiable: `districts.full.json`, `districts.json`, and `geojson.json`
@@ -8,8 +11,6 @@ There are **THREE** versions avaiable: `districts.full.json`, `districts.json`, 
 1. `districts.full.json` is the full version; <br>
 2. `districts.json` contains all fields in the full version except `GeoJSON` fields in districts and constituents; and <br>
 3. `geojson.json` is a digestible GeoJSON of type `FeatureCollection` with GeoJSON objects of districts and constituents as `features` and respective district and constituent properties other than `GeoJSON` encompassed as `properties` in the respective GeoJSON object. 
-
-**Updated 24OCT2015: GeoJSON version is available now! Please check the latest release.**
 
 Logos for the 18 district councils can be found in `dc_logo`. All are formatted to 350px sqaure png with transparent background. 
 
