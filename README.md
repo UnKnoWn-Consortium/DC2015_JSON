@@ -2,7 +2,7 @@
 [**Download the Latest Release here**](https://github.com/UnKnoWn-Consortium/DC2015_JSON/releases/latest)
 
 **Updated 24OCT2015: <br>GeoJSON version is available now! Please check the latest release.**
-**Updated 30OCT2015: <br>Updated with Gazette Extraordinary published on Monday, 26/10/2015, No. 40 Vol. 19**
+**<br>Updated 30OCT2015: <br>Updated with Gazette Extraordinary published on Monday, 26/10/2015, No. 40 Vol. 19**
 
 This repository is a collection of JSONs (plus relevant materials) for Hong Kong District Council Election 2015.
 
